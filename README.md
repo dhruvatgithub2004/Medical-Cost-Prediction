@@ -9,11 +9,11 @@ This project involves predicting medical costs for individuals using a Linear Re
 This dataset contains detailed information about medical costs for individuals over the period from 2010 to 2020. It includes various attributes such as:
 
 - **Age**: Age of the individual
-- **Sex**: Gender of the individual (0: Male, 1: Female)
+- **Sex**: Gender of the individual 
 - **BMI**: Body Mass Index of the individual
 - **Children**: Number of children/dependents of the individual
-- **Smoker**: Smoking status (0: No, 1: Yes)
-- **Region**: Geographical region (e.g., 'northwest', 'northeast', 'southeast', 'southwest')
+- **Smoker**: Smoking status 
+- **Region**: Geographical region ('northwest', 'northeast', 'southeast', 'southwest')
 - **Medical Cost**: Medical cost incurred by the individual
 
 ## Model
