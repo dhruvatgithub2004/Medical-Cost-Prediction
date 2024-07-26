@@ -39,42 +39,12 @@ To use the model for predictions, follow these steps:
 
 2. **Input Data**: Provide the input features in the following format:
     - Age (numeric)
-    - Sex (0 for Male, 1 for Female)
+    - Sex (male or female)
     - BMI (numeric)
     - Children (numeric)
-    - Smoker (0 for No, 1 for Yes)
+    - Smoker ( No or Yes)
     - Region (one of 'northwest', 'northeast', 'southeast', 'southwest')
 
 3. **Make Predictions**: Use the loaded model to predict medical costs based on the input data.
 
-## Example
 
-Here is an example of how to load the model and make predictions using Streamlit:
-
-```python
-import pickle
-import pandas as pd
-import streamlit as st
-
-# Load the model
-with open('medical_cost_prediction.pkl', "rb") as file:
-    pipeline = pickle.load(file)
-
-# Streamlit application
-st.title("Medical Cost Prediction")
-
-age = st.number_input('Age', min_value=0, max_value=120, value=25)
-sex = st.selectbox('Sex', options=[0, 1], format_func=lambda x: 'Male' if x == 0 else 'Female')
-bmi = st.number_input('BMI', min_value=0, max_value=40, value=25)
-children = st.number_input('Number of Children', min_value=0, max_value=10, value=0)
-smoker = st.selectbox('Smoker', options=[0, 1], format_func=lambda x: 'Yes' if x == 1 else 'No')
-region = st.selectbox('Region', options=['northwest', 'northeast', 'southeast', 'southwest'])
-
-# Create DataFrame
-input_data = pd.DataFrame([[age, sex, bmi, children, smoker, region]],
-                          columns=['Age', 'Sex', 'BMI', 'Children', 'Smoker', 'Region'])
-
-# Predict
-if st.button('Predict'):
-    prediction = pipeline.predict(input_data)
-    st.write('Prediction:', prediction[0])
