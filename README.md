@@ -39,8 +39,7 @@ To run this project, follow these steps:
 
 1.  **Clone the repository:** (Assumed, as the code is provided in excerpts)
     ```bash
-    git clone <repository_url>
-    cd <project_directory>
+    git clone https://github.com/dhruvatgithub2004/Medical-Cost-Prediction.git
     ```
 2.  **Ensure Python is installed:** Python 3.10 is recommended.
 3.  **Install necessary libraries:** You can install all required libraries using `pip`.
