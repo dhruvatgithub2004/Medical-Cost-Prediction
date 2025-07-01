@@ -50,7 +50,7 @@ To run this project, follow these steps:
 4.  **Download the dataset:** The project reads data from a CSV file named `medical cost regression.csv`. Ensure this file is located at the specified path (`C:\Users\dkdes\OneDrive\Desktop\kaggle_datasets\medical cost regression.csv`) or update the `pd.read_csv` line in the script.
 5.  **Run the Python script(s):** Execute the main script containing the data loading, preprocessing, model training, and evaluation steps.
     ```bash
-    python your_main_script_name.py
+    python medical_cost_prediction_app.py
     ```
     *(The provided sources are code excerpts, implying they are part of a larger script or notebook.)*
 6.  **Load the pre-trained model (Optional):** If you wish to use the saved pipeline, ensure `medical Cost prediction.pkl` is available in your project directory and load it using `pickle`.
