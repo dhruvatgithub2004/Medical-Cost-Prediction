@@ -69,7 +69,7 @@ The solution encompasses the following functionalities:
     *   Linear Regression
     *   Random Forest Regressor
     *   Gradient Boosting Regressor
-*   **Model Evaluation:** Assesses model performance using metrics such as R² score and Mean Absolute Error (MAE). The Gradient Boosting model achieved an R² Score of **0.9976575465426418** on test data [3].
+*   **Model Evaluation:** Assesses model performance using metrics such as R² score and Mean Absolute Error (MAE). The Gradient Boosting model achieved an R² Score of **0.9976575465426418** on test data.
 *   **Overfitting Check:** Utilises cross-validation to assess if models are overfitting to the training data.
 *   **Feature Importance Analysis:** Identifies the most important features contributing to medical cost prediction using the Random Forest model.
 *   **Model Persistence:** Saves the trained machine learning pipeline using `pickle` for future use or deployment.
@@ -97,13 +97,17 @@ To adapt or scale this solution globally or for distinct healthcare systems:
 
 Potential improvements and additional features for this project include:
 
-*   **Advanced Model Exploration:** Implementing and evaluating more sophisticated models like XGBoost  or deep learning architectures for potentially higher accuracy.
 *   **Hyperparameter Tuning:** Conducting extensive hyperparameter optimisation for the chosen models (Random Forest, Gradient Boosting) to achieve peak performance.
-*   **Outlier Treatment:** Implementing more advanced strategies for outlier detection and treatment, beyond just visualisation, to potentially improve model robustness.
+*   **Insurance plan optimization**
+*   **mobile responsiveness**
+*   **EHR or insurance API integration**
+*   **mulltilingual support**
 *   **Uncertainty Quantification:** Providing not just a point prediction for medical cost, but also a confidence interval or range, to give a better sense of prediction uncertainty.
 *   **Interactive Application:** Developing a user-friendly web application or interface to allow users to input patient details and receive instant medical cost predictions.
-*   **Real-time Prediction Integration:** Exploring possibilities for integrating the model into existing healthcare systems for real-time cost estimation.
 *   **Continuous Learning:** Implementing a system for continuous model retraining and updates with new data to maintain accuracy as healthcare trends evolve.
+
+## Link to the app
+https://medical-cost-prediction-kaz789d6pcpqnpdpabbsst.streamlit.app/
 
 ## Team Members
 
