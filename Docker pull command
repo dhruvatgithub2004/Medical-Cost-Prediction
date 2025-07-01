@@ -1,1 +1,35 @@
+## 🚀 How to Run the App Using Docker
+
+This is a lightweight, AI-powered Streamlit app that predicts medical costs based on health and lifestyle attributes. It’s containerized and ready to deploy using Docker.
+
+---
+
+### ✅ Prerequisites
+
+- Docker must be installed on your system.  
+  Check installation with:
+
+  ```bash
+  docker --version
+
+Step 1
 docker pull dhruv1511/medical
+
+Step 2
+docker run -p 8501:8501 dhruv1511/medical
+
+Step 3: Access the app Locally
+http://localhost:8501
+
+Step 4: list the containers
+docker ps
+
+Step 5: Stop the container
+docker stop <container-id>
+
+Step 6(Optional) : Remove the container
+docker rm <container-id>
+
+Step 7 (Optional): Remove the docker image
+docker rmi dhruv1511/medical
+
