@@ -109,6 +109,9 @@ Potential improvements and additional features for this project include:
 ## Link to the app
 https://medical-cost-prediction-kaz789d6pcpqnpdpabbsst.streamlit.app/
 
+## Link to the video
+https://youtu.be/u_MIXS6VLYo
+
 ## Team Members
 
 *   **Dhruv Desai** - Individual Contributor
